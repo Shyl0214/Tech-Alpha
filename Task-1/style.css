@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    color: #fff;
+    background: #720e9e;
+    width: 100%;
+    min-height: 100vh;
+    padding: 16px;
+    
+}
+
+.calculator {
+    margin: 6% 0 0 10%;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 24px;
+}
+
+.calculator h1 {
+    font-size: 40px;
+}
+
+.calculator h1 span {
+    color: #cdc907;
+    font-size: 45px;
+    margin: 0.5% 0 0 0;
+}
+
+.input-box {
+    margin: 6.5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px ;
+    padding: 16px;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+.input-box input {
+    flex: 1;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.input-box button {
+    font-size:15px;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: #dabd02;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.input-box input::-webkit-calendar-picker-indicator{
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    width:auto;
+    height:auto;
+    background-position: calc(100% - 10px); 
+    background-size:5%;
+    cursor: pointer;
+    
+}
+
+#age{
+ font-size:20px;
+ font-family:'Times New Roman', Times, serif;
+}
+
+#age span{
+    color: #F6D242;
+}
+
+@media screen and (max-width:600px){
+    .container{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .calculator{
+        margin: 0 auto;
+        width: 430px;
+    }
+    .calculator h1 {
+        font-size: 35px;
+    }
+    
+    .calculator h1 span {
+        font-size: 40px;
+    }
+    .input-box {
+        margin: 6.5% 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px ;
+        padding: 16px;
+        background-color: #8EC5FC;
+        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+        max-width: 450px;
+        border-radius: 10px;
+    }
+    #age{
+        font-size:18px;
+       }
+    
+}
