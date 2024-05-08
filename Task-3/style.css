@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677,#4e0857);
+}
+.To-Do{
+    width: 100%;
+    max-width:450px;
+    margin: 100px auto 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.row{
+    width:100%;
+    display:flex;
+    align-items:center;
+}
+.row h2{
+    color:#153677;
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 5px;
+}
+.row img{
+    width: 2rem;;
+}
+.add_note{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-top:20px;
+    padding: 0 10px 0;
+    margin-bottom: 25px;
+}
+.add_note input{
+    border:0.5px solid grey;
+    outline:none;
+    width:100%;
+    flex:1;
+    font-weight:400;
+    padding: 0 7px 0;
+    border-radius: 10px;
+    height: 40px;
+    margin-right: 5px;
+    background:transparent;
+}
+.add_note button{
+    width: 5rem;
+    height:40px;
+    border:none;
+    border-radius: 10px;
+    color:#fff;
+    background:#ff5945;
+    cursor:pointer;
+}
+ul li{
+    list-style-type: none;
+    padding: 12px 8px 12px 45px;
+    font-size: 16px;
+    font-weight:500;
+    position:relative;
+    display:flex;
+    align-items: center;
+    user-select: none;
+    cursor:pointer;
+}
+ul li::before{
+    content:'';
+    position:absolute;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    background-image: url(images/unchecked.png);
+    background-size:cover;
+    background-position: center;
+    left:12px;
+}
+ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    content:'';
+    positioN:absolute;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    background-image: url(images/checked.png);
+    background-size:cover;
+    background-position: center;
+    text-decoration: line-through;
+}
+
+li span{
+    font-size:1.3rem;
+    width:25px;
+    height:25px;
+    text-align:center;
+    border-radius:10px;
+    position:absolute;
+    right:0;
+}
+
+li span:hover{
+    background-color:lightgrey;
+}
